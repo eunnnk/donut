@@ -1,0 +1,113 @@
+#wrapper{min-width: 390px; max-width: 1920px; margin: 0 auto;}
+img.tab{display: none;}
+img.pc{display: none;}
+img.m{display: block;}
+
+header{
+    position: relative;
+    display: flex;
+    height: 50px;
+    background-color: #a57dff;
+    justify-content: space-between;
+}
+header h1{
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 img{width: 63px;}
+header .btn-nav{
+    order: 1;
+    background-color: rgba(0,0,0,0.4);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .btn-nav button{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+header .btn-nav button::before,
+header .btn-nav button span,
+header .btn-nav button::after{
+    content:'';
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0px;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #a57dff;
+    transition: left 0.3s;
+}
+header nav .btn-close button{
+    width: 50px;
+    height: 50px;
+    content: '';
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+}
+header nav .btn-close button::before{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 26px;
+    background-color: #fff;
+    transform: translateY(2px) rotate(45deg);
+}
+header nav .btn-close button::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 26px;
+    background-color: #fff;
+    transform: translateY(-2px) rotate(-45deg);
+}
+/* header nav .gnb{} */
+header nav .gnb li{
+    font-size: 33px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+}
+header nav .util{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+header nav .util li:nth-child(1)::after{
+    content: '/';
+    margin: 0 5px;
+}
+header nav .util li:nth-child(3){
+    display: none;
+}
+header .btn-mypage{
+    order: 3;
+    background-color: rgba(0,0,0,0.4);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+header .btn-mypage img{
+    height: 20px;
+}
+
+.banner{width: 100%;}
+.banner a{}
